@@ -26,6 +26,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { track } from "@vercel/analytics";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
@@ -33,6 +34,7 @@ export default function Home() {
 
   const handleNavigation = () => {
     setIsLoading(true);
+    track("navigation_click", { destination: "image" });
     // Simulate loading for demonstration purposes
     setTimeout(() => {
       setIsLoading(false);
