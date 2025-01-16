@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://votre-domaine.com/sitemap.xml",
+    sitemap: "https://resize2.vercel.app/sitemap.xml",
   };
 }
