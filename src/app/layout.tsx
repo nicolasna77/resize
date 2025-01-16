@@ -72,12 +72,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <Analytics />
       <body className={inter.className}>
         <Header />
         <div className="background-gradient absolute inset-0 z-[-1] min-h-full" />
         {children}
         <Footer />
-        <Analytics />
         <Toaster />
       </body>
     </html>
