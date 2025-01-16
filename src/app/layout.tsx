@@ -4,6 +4,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import Header from "@/components/header";
 import { Footer } from "@/components/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -76,6 +77,7 @@ export default function RootLayout({
         <div className="background-gradient absolute inset-0 z-[-1] min-h-full" />
         {children}
         <Footer />
+        <Analytics />
         <Toaster />
       </body>
     </html>
