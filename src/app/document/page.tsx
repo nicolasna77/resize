@@ -1,9 +1,20 @@
-"use client";
-
 import DocumentProcessor from "@/components/DocumentProcessor";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const generateMetadata = (): Metadata => {
+  return {
+    title: "Convertisseur de Documents",
+    description:
+      "Convertissez vos documents PDF en images ou autres formats. Compression et optimisation incluses.",
+    openGraph: {
+      title: "Convertisseur de Documents",
+      description: "Convertissez vos documents facilement",
+    },
+  };
+};
 
 export default function DocumentPage() {
   return (

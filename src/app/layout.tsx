@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://votre-domaine.com"),
+  metadataBase: new URL("https://resize.vercel.app"),
   title: {
     default: "FileFlow - Convertisseur d'Images et Documents en Ligne",
     template: "%s | FileFlow",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://votre-domaine.com",
+    url: "https://resize.vercel.app",
     title: "FileFlow - Convertisseur d'Images et Documents en Ligne",
     description:
       "Convertissez et optimisez vos fichiers facilement et gratuitement",

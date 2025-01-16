@@ -1,19 +1,19 @@
-"use client";
-
 import ImageProcessor from "@/components/ImageProcessor";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import type { Metadata } from "next";
+import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Convertisseur et Optimiseur d'Images",
-  description:
-    "Convertissez et optimisez vos images en WebP, JPEG, PNG ou AVIF. Compression intelligente et redimensionnement facile.",
-  openGraph: {
-    title: "Convertisseur et Optimiseur d'Images | FileFlow",
-    description: "Convertissez et optimisez vos images en quelques clics",
-  },
+export const generateMetadata = (): Metadata => {
+  return {
+    title: "Convertisseur et Optimiseur d'Images",
+    description:
+      "Convertissez et optimisez vos images en WebP, JPEG, PNG ou AVIF. Compression intelligente et redimensionnement facile.",
+    openGraph: {
+      title: "Convertisseur et Optimiseur d'Images",
+      description: "Convertissez et optimisez vos images en quelques clics",
+    },
+  };
 };
 
 export default function ImagePage() {
