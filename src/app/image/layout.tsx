@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "redimensionner image",
   ],
   openGraph: {
-    title: "Convertisseur et Optimiseur d'Images | FileFlow",
+    title: "Convertisseur et Optimiseur d'Images | Resize2",
     description: "Convertissez et optimisez vos images en quelques clics",
     type: "website",
   },

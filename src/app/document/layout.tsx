@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "optimisation document",
   ],
   openGraph: {
-    title: "Convertisseur de Documents | FileFlow",
+    title: "Convertisseur de Documents | Resize2",
     description: "Convertissez vos documents facilement",
     type: "website",
   },

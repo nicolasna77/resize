@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://resize.vercel.app"),
   title: {
-    default: "FileFlow - Convertisseur d'Images et Documents en Ligne",
-    template: "%s | FileFlow",
+    default: "Resize2 - Convertisseur d'Images et Documents en Ligne",
+    template: "%s | Resize2",
   },
   description:
     "Convertissez, compressez et optimisez vos images et documents en ligne gratuitement. Support des formats WebP, JPEG, PNG, AVIF et PDF.",
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     "redimensionner image",
     "convertisseur gratuit",
   ],
-  authors: [{ name: "FileFlow" }],
-  creator: "FileFlow",
-  publisher: "FileFlow",
+  authors: [{ name: "Resize2" }],
+  creator: "Resize2",
+  publisher: "Resize2",
   formatDetection: {
     email: false,
     address: false,
@@ -36,15 +36,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://resize.vercel.app",
-    title: "FileFlow - Convertisseur d'Images et Documents en Ligne",
+    url: "https://resize2.vercel.app",
+    title: "Resize2 - Convertisseur d'Images et Documents en Ligne",
     description:
       "Convertissez et optimisez vos fichiers facilement et gratuitement",
-    siteName: "FileFlow",
+    siteName: "Resize2",
   },
   twitter: {
     card: "summary_large_image",
-    title: "FileFlow - Convertisseur d'Images et Documents",
+    title: "Resize2 - Convertisseur d'Images et Documents",
     description:
       "Convertissez et optimisez vos fichiers facilement et gratuitement",
   },

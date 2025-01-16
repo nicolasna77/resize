@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Resize
+              © {new Date().getFullYear()} Resize2
             </p>
           </div>
           <Link

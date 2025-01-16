@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container-wrapper">
         <div className="container flex h-16 items-center">
           <Link href="/" className="text-4xl px-4 font-bold">
-            Resize
+            Resize<span className="text-primary">2</span>
           </Link>
         </div>
       </div>
