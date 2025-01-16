@@ -70,10 +70,10 @@ export default function Home() {
   return (
     <main className="overflow-hidden">
       {/* Hero Section */}
-      <section className="py-20 md:py-32 px-4 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
+      <section className="py-12 md:py-20 px-4 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+        <div className="max-w-4xl mx-auto text-center space-y-6 md:space-y-8">
           <motion.h1
-            className="text-4xl sm:text-5xl font-bold tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight px-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -82,7 +82,7 @@ export default function Home() {
             <span className="text-primary">Facilement</span>
           </motion.h1>
           <motion.p
-            className="text-xl text-muted-foreground max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -91,7 +91,7 @@ export default function Home() {
             optimiser vos images et documents.
           </motion.p>
           <motion.div
-            className="flex flex-col sm:flex-row justify-center gap-4"
+            className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 px-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -157,17 +157,17 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 md:py-32 bg-muted/50">
+      <section className="py-12 md:py-20 bg-muted/50">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold mb-4">
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">
               Tout ce dont vous avez besoin
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-sm md:text-base text-muted-foreground">
               Des outils puissants pour gérer vos fichiers
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
@@ -176,12 +176,16 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Card className="border-none shadow-lg h-full transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
-                  <CardHeader>
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                  <CardHeader className="p-4 md:p-6">
+                    <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                       {feature.icon}
                     </div>
-                    <CardTitle>{feature.title}</CardTitle>
-                    <CardDescription>{feature.description}</CardDescription>
+                    <CardTitle className="text-lg md:text-xl">
+                      {feature.title}
+                    </CardTitle>
+                    <CardDescription className="text-sm md:text-base">
+                      {feature.description}
+                    </CardDescription>
                   </CardHeader>
                 </Card>
               </motion.div>
@@ -191,10 +195,12 @@ export default function Home() {
       </section>
 
       {/* Call-to-Action Section */}
-      <section className="py-20 bg-primary text-primary-foreground relative overflow-hidden">
+      <section className="py-12 md:py-20 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="max-w-4xl mx-auto text-center px-4 relative z-10">
-          <h2 className="text-3xl font-bold mb-4">Prêt à commencer ?</h2>
-          <p className="text-xl mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">
+            Prêt à commencer ?
+          </h2>
+          <p className="text-lg md:text-xl mb-6 md:mb-8">
             Convertissez et optimisez vos fichiers dès maintenant !
           </p>
           <Link
@@ -232,9 +238,9 @@ export default function Home() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
-            className="fixed bottom-4 right-4 bg-green-500 text-white p-4 rounded-md shadow-lg flex items-center"
+            className="fixed bottom-4 right-4 bg-green-500 text-white p-3 md:p-4 rounded-md shadow-lg flex items-center text-sm md:text-base"
           >
-            <CheckCircle className="w-6 h-6 mr-2" />
+            <CheckCircle className="w-5 h-5 md:w-6 md:h-6 mr-2" />
             <span>Redirection réussie !</span>
           </motion.div>
         )}
