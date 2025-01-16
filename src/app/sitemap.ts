@@ -2,25 +2,28 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://resize2.vercel.app";
+  const lastModified = new Date();
 
-  return [
+  const routes = [
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      lastModified,
+      changeFrequency: "daily" as const,
       priority: 1,
     },
     {
       url: `${baseUrl}/image`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
+      lastModified,
+      changeFrequency: "daily" as const,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/document`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      lastModified,
+      changeFrequency: "daily" as const,
       priority: 0.8,
     },
   ];
+
+  return routes;
 }
